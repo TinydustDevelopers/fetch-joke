@@ -1,0 +1,17 @@
+{
+  "server": {
+    "url": "http://localhost:3000/joke",
+    "method": "POST"
+  },
+  "name": {
+    "cn": "随机获取一段笑话",
+    "en": "Fetch a random Chinese Joke"
+  },
+  "icon": "http://www.laifudao.com/images/icon_144.png",
+  "required": [],
+  "optional": [],
+  "returns": [{
+    "count": 1,
+    "type": "Text"
+  }]
+}

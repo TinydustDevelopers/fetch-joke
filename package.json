@@ -1,0 +1,21 @@
+{
+  "name": "fetch-joker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "supervisor src/index.js",
+    "start": "node index.js",
+    "build": "babel src -o index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.67.0",
+    "restify": "^4.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "supervisor": "*"
+  }
+}
