@@ -21,9 +21,10 @@ app.get('/joke', (req, res) => {
     }
 
     if (response.statusCode === 200) {
+      body = body.trim().replace(/\s/g, '');
       var jokes = JSON.parse(body);
       var joke = jokes[Math.floor(Math.random() * jokes.length)];
-
+      
       return res.send({
         type: 'Text',
         data: [joke.content.trim().replace(/"/g, '\"').replace(/<br\/>/g, '')]
